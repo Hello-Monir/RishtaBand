@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RishtaBand — Find Your Forever</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="mandala-ring"></div>
+      <div class="mandala-ring ring2"></div>
+      <div class="preloader-text">RishtaBand</div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">❧</span>
+      <span class="brand-name">RishtaBand</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+      <li><a href="#profiles" class="nav-link">Browse</a></li>
+      <li><a href="#testimonials" class="nav-link">Stories</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-outline" id="loginBtn">Sign In</button>
+      <button class="btn-primary" id="registerBtn">Join Free</button>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#how-it-works" class="mob-link">How It Works</a></li>
+      <li><a href="#profiles" class="mob-link">Browse</a></li>
+      <li><a href="#testimonials" class="mob-link">Stories</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+      <li><a href="#" class="mob-link">Sign In</a></li>
+      <li><a href="#" class="mob-link highlight">Join Free</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="petal-container" id="petalContainer"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge fade-up">✦ Trusted by 2 Million+ Families</div>
+      <h1 class="hero-title fade-up">
+        Where Two Souls<br />
+        <em>Find Their Forever</em>
+      </h1>
+      <p class="hero-subtitle fade-up">
+        A sacred space where families come together to find meaningful, lifelong connections. 
+        Guided by tradition, powered by modern matchmaking.
+      </p>
+      <div class="hero-search fade-up" id="heroSearch">
+        <div class="search-group">
+          <label>I am a</label>
+          <select class="search-select">
+            <option>Bride</option>
+            <option>Groom</option>
+          </select>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-group">
+          <label>Religion</label>
+          <select class="search-select">
+            <option>Muslim</option>
+            <option>Hindu</option>
+            <option>Christian</option>
+            <option>Buddhist</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-group">
+          <label>Age Range</label>
+          <select class="search-select">
+            <option>18 – 25</option>
+            <option>26 – 30</option>
+            <option>31 – 35</option>
+            <option>36 – 40</option>
+            <option>40+</option>
+          </select>
+        </div>
+        <button class="search-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          Find Matches
+        </button>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="stat">
+          <span class="stat-num" data-target="2400000">0</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-sep">•</div>
+        <div class="stat">
+          <span class="stat-num" data-target="185000">0</span>
+          <span class="stat-label">Marriages</span>
+        </div>
+        <div class="stat-sep">•</div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span>
+          <span class="stat-label">% Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual fade-right">
+      <div class="hero-card-stack">
+        <div class="profile-card card-back">
+          <div class="card-img-placeholder" style="background: linear-gradient(135deg, #e8d5c4, #c9a98a);"></div>
+          <div class="card-info"><strong>Ayesha R.</strong><span>26 · Dhaka</span></div>
+        </div>
+        <div class="profile-card card-front">
+          <div class="card-img-placeholder" style="background: linear-gradient(135deg, #c4d5e8, #8aafc9);"></div>
+          <div class="card-info"><strong>Farhan A.</strong><span>29 · Chittagong</span></div>
+          <div class="card-match-badge">❤ 97% Match</div>
+        </div>
+        <div class="ring-decoration">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="8 4"/>
+            <defs>
+              <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9935a"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="features-strip">
+    <div class="feature-item">
+      <span class="feat-icon">🔒</span>
+      <span>Verified Profiles</span>
+    </div>
+    <div class="feature-item">
+      <span class="feat-icon">🤝</span>
+      <span>Family Managed</span>
+    </div>
+    <div class="feature-item">
+      <span class="feat-icon">✨</span>
+      <span>AI Matchmaking</span>
+    </div>
+    <div class="feature-item">
+      <span class="feat-icon">🌍</span>
+      <span>Global Reach</span>
+    </div>
+    <div class="feature-item">
+      <span class="feat-icon">💬</span>
+      <span>Safe Messaging</span>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works section-pad" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag reveal">The Journey</p>
+        <h2 class="section-title reveal">Your Path to a<br/><em>Beautiful Beginning</em></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal" data-step="01">
+          <div class="step-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Create Your Profile</h3>
+          <p>Share your story, values, and what you seek in a life partner. Our guided setup takes only minutes.</p>
+        </div>
+        <div class="step-connector reveal">
+          <div class="connector-line"></div>
+          <div class="connector-heart">♥</div>
+        </div>
+        <div class="step-card reveal" data-step="02">
+          <div class="step-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3>Discover Matches</h3>
+          <p>Our intelligent algorithm suggests highly compatible profiles based on your preferences and values.</p>
+        </div>
+        <div class="step-connector reveal">
+          <div class="connector-line"></div>
+          <div class="connector-heart">♥</div>
+        </div>
+        <div class="step-card reveal" data-step="03">
+          <div class="step-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+          </div>
+          <h3>Connect & Converse</h3>
+          <p>Exchange messages in a safe, moderated environment. Involve your family when you feel ready.</p>
+        </div>
+        <div class="step-connector reveal">
+          <div class="connector-line"></div>
+          <div class="connector-heart">♥</div>
+        </div>
+        <div class="step-card reveal" data-step="04">
+          <div class="step-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Begin Together</h3>
+          <p>When hearts align and families approve, embark on your beautiful journey of a lifetime together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILES SECTION -->
+  <section class="profiles-section section-pad" id="profiles">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag reveal">Featured Profiles</p>
+        <h2 class="section-title reveal">Meet Wonderful<br/><em>People Seeking Love</em></h2>
+      </div>
+      <div class="profile-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="bride">Brides</button>
+        <button class="filter-btn" data-filter="groom">Grooms</button>
+        <button class="filter-btn" data-filter="verified">Verified ✓</button>
+      </div>
+      <div class="profiles-grid" id="profilesGrid">
+
+        <div class="profile-tile reveal" data-type="bride">
+          <div class="tile-photo" style="background: linear-gradient(160deg, #f0e6d3 0%, #d4a574 100%);">
+            <div class="tile-avatar">A</div>
+          </div>
+          <div class="tile-badge verified">✓ Verified</div>
+          <div class="tile-body">
+            <h4>Ayesha Rahman</h4>
+            <p class="tile-meta">25 yrs · Dhaka · Muslim</p>
+            <p class="tile-detail">Software Engineer · Master's in CSE</p>
+            <div class="tile-tags">
+              <span>Family-oriented</span>
+              <span>Traveler</span>
+              <span>Reader</span>
+            </div>
+          </div>
+          <div class="tile-actions">
+            <button class="tile-btn like-btn" aria-label="Like"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="tile-btn-primary">View Profile</button>
+            <button class="tile-btn msg-btn" aria-label="Message"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg></button>
+          </div>
+        </div>
+
+        <div class="profile-tile reveal" data-type="groom">
+          <div class="tile-photo" style="background: linear-gradient(160deg, #d3e6f0 0%, #74a4d4 100%);">
+            <div class="tile-avatar">F</div>
+          </div>
+          <div class="tile-badge verified">✓ Verified</div>
+          <div class="tile-body">
+            <h4>Farhan Ahmed</h4>
+            <p class="tile-meta">28 yrs · Chittagong · Muslim</p>
+            <p class="tile-detail">Business Analyst · MBA</p>
+            <div class="tile-tags">
+              <span>Ambitious</span>
+              <span>Pious</span>
+              <span>Foodie</span>
+            </div>
+          </div>
+          <div class="tile-actions">
+            <button class="tile-btn like-btn" aria-label="Like"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="tile-btn-primary">View Profile</button>
+            <button class="tile-btn msg-btn" aria-label="Message"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg></button>
+          </div>
+        </div>
+
+        <div class="profile-tile reveal" data-type="bride verified">
+          <div class="tile-photo" style="background: linear-gradient(160deg, #ead3f0 0%, #b474d4 100%);">
+            <div class="tile-avatar">N</div>
+          </div>
+          <div class="tile-badge premium">★ Premium</div>
+          <div class="tile-body">
+            <h4>Nadia Islam</h4>
+            <p class="tile-meta">27 yrs · Sylhet · Muslim</p>
+            <p class="tile-detail">Doctor (MBBS) · Residency</p>
+            <div class="tile-tags">
+              <span>Compassionate</span>
+              <span>Creative</span>
+              <span>Sporty</span>
+            </div>
+          </div>
+          <div class="tile-actions">
+            <button class="tile-btn like-btn" aria-label="Like"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="tile-btn-primary">View Profile</button>
+            <button class="tile-btn msg-btn" aria-label="Message"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg></button>
+          </div>
+        </div>
+
+        <div class="profile-tile reveal" data-type="groom verified">
+          <div class="tile-photo" style="background: linear-gradient(160deg, #d3f0e0 0%, #74d499 100%);">
+            <div class="tile-avatar">R</div>
+          </div>
+          <div class="tile-badge premium">★ Premium</div>
+          <div class="tile-body">
+            <h4>Rakib Hossain</h4>
+            <p class="tile-meta">31 yrs · Rajshahi · Muslim</p>
+            <p class="tile-detail">Civil Engineer · B.Sc Engineering</p>
+            <div class="tile-tags">
+              <span>Respectful</span>
+              <span>Athletic</span>
+              <span>Leader</span>
+            </div>
+          </div>
+          <div class="tile-actions">
+            <button class="tile-btn like-btn" aria-label="Like"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="tile-btn-primary">View Profile</button>
+            <button class="tile-btn msg-btn" aria-label="Message"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg></button>
+          </div>
+        </div>
+
+        <div class="profile-tile reveal" data-type="bride">
+          <div class="tile-photo" style="background: linear-gradient(160deg, #f0d3d3 0%, #d47474 100%);">
+            <div class="tile-avatar">S</div>
+          </div>
+          <div class="tile-badge verified">✓ Verified</div>
+          <div class="tile-body">
+            <h4>Sumaiya Begum</h4>
+            <p class="tile-meta">24 yrs · Comilla · Muslim</p>
+            <p class="tile-detail">Teacher · B.Ed</p>
+            <div class="tile-tags">
+              <span>Nurturing</span>
+              <span>Homely</span>
+              <span>Artistic</span>
+            </div>
+          </div>
+          <div class="tile-actions">
+            <button class="tile-btn like-btn" aria-label="Like"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="tile-btn-primary">View Profile</button>
+            <button class="tile-btn msg-btn" aria-label="Message"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg></button>
+          </div>
+        </div>
+
+        <div class="profile-tile reveal" data-type="groom">
+          <div class="tile-photo" style="background: linear-gradient(160deg, #f0ead3 0%, #d4b874 100%);">
+            <div class="tile-avatar">T</div>
+          </div>
+          <div class="tile-badge verified">✓ Verified</div>
+          <div class="tile-body">
+            <h4>Tanvir Khan</h4>
+            <p class="tile-meta">30 yrs · Khulna · Muslim</p>
+            <p class="tile-detail">Pharmacist · B.Pharm</p>
+            <div class="tile-tags">
+              <span>Caring</span>
+              <span>Humble</span>
+              <span>Traveler</span>
+            </div>
+          </div>
+          <div class="tile-actions">
+            <button class="tile-btn like-btn" aria-label="Like"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="tile-btn-primary">View Profile</button>
+            <button class="tile-btn msg-btn" aria-label="Message"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg></button>
+          </div>
+        </div>
+
+      </div>
+      <div class="view-all-wrap reveal">
+        <button class="btn-primary-lg">View All Profiles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="testi-bg-text">Stories</div>
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag reveal">Success Stories</p>
+        <h2 class="section-title reveal">They Found Their<br/><em>Perfect Match Here</em></h2>
+      </div>
+      <div class="testi-slider" id="testiSlider">
+        <div class="testi-track" id="testiTrack">
+
+          <div class="testi-card">
+            <div class="testi-photo" style="background: linear-gradient(135deg, #e8d5c4, #c9a98a);">
+              <span>M&F</span>
+            </div>
+            <div class="testi-quote">❝</div>
+            <p class="testi-text">We matched in February and were married by December. RishtaBand made the entire process feel sacred and dignified. Our families were involved at every step.</p>
+            <div class="testi-couple">
+              <strong>Mariam & Faisal</strong>
+              <span>Dhaka · Married 2023</span>
+            </div>
+            <div class="testi-hearts">♥ ♥ ♥ ♥ ♥</div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-photo" style="background: linear-gradient(135deg, #c4d5e8, #8aafc9);">
+              <span>S&A</span>
+            </div>
+            <div class="testi-quote">❝</div>
+            <p class="testi-text">As an NRB, I was worried about finding someone who shared my values. This platform connected me with Amina within weeks. Alhamdulillah, we are blissfully married.</p>
+            <div class="testi-couple">
+              <strong>Shafiq & Amina</strong>
+              <span>London & Sylhet · Married 2024</span>
+            </div>
+            <div class="testi-hearts">♥ ♥ ♥ ♥ ♥</div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-photo" style="background: linear-gradient(135deg, #d5e8c4, #a9c98a);">
+              <span>R&P</span>
+            </div>
+            <div class="testi-quote">❝</div>
+            <p class="testi-text">The AI suggestions were surprisingly accurate. The first profile I seriously considered became my husband. It felt like fate, guided by a thoughtful system.</p>
+            <div class="testi-couple">
+              <strong>Rina & Pervez</strong>
+              <span>Chittagong · Married 2024</span>
+            </div>
+            <div class="testi-hearts">♥ ♥ ♥ ♥ ♥</div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-photo" style="background: linear-gradient(135deg, #e8c4d5, #c98aa9);">
+              <span>K&J</span>
+            </div>
+            <div class="testi-quote">❝</div>
+            <p class="testi-text">My parents were hesitant about online matrimonial. After seeing how seriously RishtaBand treats privacy and family involvement, they became our biggest supporters.</p>
+            <div class="testi-couple">
+              <strong>Khadija & Jamal</strong>
+              <span>Rajshahi · Married 2023</span>
+            </div>
+            <div class="testi-hearts">♥ ♥ ♥ ♥ ♥</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiPrev">←</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiNext">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANS SECTION -->
+  <section class="plans-section section-pad" id="plans">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag reveal">Membership Plans</p>
+        <h2 class="section-title reveal">Choose Your<br/><em>Love Journey Plan</em></h2>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card reveal">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">Free</div>
+          <div class="plan-period">Forever</div>
+          <ul class="plan-features">
+            <li class="yes">Create Profile</li>
+            <li class="yes">Browse 20 Profiles/day</li>
+            <li class="yes">Send 5 Interests</li>
+            <li class="no">Unlimited Messaging</li>
+            <li class="no">AI Match Suggestions</li>
+            <li class="no">Priority Listing</li>
+          </ul>
+          <button class="plan-btn outline">Get Started</button>
+        </div>
+        <div class="plan-card featured reveal">
+          <div class="plan-popular">Most Popular</div>
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">৳999</div>
+          <div class="plan-period">per 3 months</div>
+          <ul class="plan-features">
+            <li class="yes">Everything in Basic</li>
+            <li class="yes">Unlimited Browsing</li>
+            <li class="yes">Unlimited Messaging</li>
+            <li class="yes">AI Match Suggestions</li>
+            <li class="yes">Priority Listing</li>
+            <li class="no">Dedicated Matchmaker</li>
+          </ul>
+          <button class="plan-btn primary">Choose Premium</button>
+        </div>
+        <div class="plan-card reveal">
+          <div class="plan-name">Elite</div>
+          <div class="plan-price">৳2999</div>
+          <div class="plan-period">per 6 months</div>
+          <ul class="plan-features">
+            <li class="yes">Everything in Premium</li>
+            <li class="yes">Dedicated Matchmaker</li>
+            <li class="yes">Background Verified</li>
+            <li class="yes">Family Consultation</li>
+            <li class="yes">Event Invitations</li>
+            <li class="yes">Concierge Support</li>
+          </ul>
+          <button class="plan-btn outline">Go Elite</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section section-pad" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info reveal">
+          <p class="section-tag">Get In Touch</p>
+          <h2 class="section-title">We're Here<br/><em>To Help You</em></h2>
+          <p class="contact-desc">Whether you have questions about profiles, need support, or want to learn about our matchmaking services — our team is ready to assist.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="c-icon">📍</span>
+              <div><strong>Address</strong><br/>House 12, Road 4, Dhanmondi, Dhaka-1205</div>
+            </div>
+            <div class="contact-item">
+              <span class="c-icon">📞</span>
+              <div><strong>Phone</strong><br/>+880 1700-000000</div>
+            </div>
+            <div class="contact-item">
+              <span class="c-icon">✉️</span>
+              <div><strong>Email</strong><br/>hello@rishtaband.com</div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+880 XXXXXXXXXX" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell us how we can help you…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary-lg full-width">
+            Send Message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="brand-icon">❧</span>
+            <span class="brand-name">RishtaBand</span>
+          </div>
+          <p>A trusted name in matrimonial services, connecting hearts with dignity, tradition, and care since 2015.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook">f</a>
+            <a href="#" class="social-btn" aria-label="Instagram">in</a>
+            <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Profiles</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Plans & Pricing</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Safety Tips</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p>Get updates on new features and matrimonial tips.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email" />
+            <button>→</button>
+          </div>
+          <p class="footer-app">Download our App</p>
+          <div class="app-badges">
+            <button class="app-badge">🍎 App Store</button>
+            <button class="app-badge">▶ Google Play</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 RishtaBand. All rights reserved. Made with ♥ in Bangladesh.</p>
+        <p>Designed for families who believe in the beauty of commitment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: Register -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-header">
+        <span class="brand-icon">❧</span>
+        <h3 id="modalTitle">Create Your Free Account</h3>
+        <p id="modalSubtitle">Begin your journey to finding your perfect match</p>
+      </div>
+      <form class="modal-form" id="modalForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="First Name" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Last Name" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>I am looking for</label>
+          <select>
+            <option>A Groom</option>
+            <option>A Bride</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required />
+        </div>
+        <button type="submit" class="btn-primary-lg full-width" id="modalSubmitBtn">Create Account</button>
+        <p class="modal-switch">Already a member? <a href="#" id="switchToLogin">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
