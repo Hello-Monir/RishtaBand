@@ -291,6 +291,7 @@ a, button, select, input, textarea { cursor: none; }
 }
 
 /* HERO SEARCH */
+
 .hero-search {
   display: flex; align-items: center;
   background: white;
