@@ -295,6 +295,7 @@ a, button, select, input, textarea { cursor: none; }
   display: flex; align-items: center;
   background: white;
   border-radius: 60px;
+
   padding: 8px 8px 8px 24px;
   box-shadow: var(--shadow-lg);
   gap: 0;
