@@ -276,16 +276,6 @@ tileStyle.textContent = `
 `;
 document.head.appendChild(tileStyle);
 
-// Inject tile animation
-const tileStyle = document.createElement('style');
-tileStyle.textContent = `
-  @keyframes fadeInTile {
-    from { opacity: 0; transform: scale(0.95) translateY(12px); }
-    to   { opacity: 1; transform: scale(1) translateY(0); }
-  }
-`;
-document.head.appendChild(tileStyle);
-
 /* ============================================================
    LIKE BUTTON TOGGLE
    ============================================================ */
