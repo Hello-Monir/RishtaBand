@@ -108,6 +108,17 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
+// Smooth scroll for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
 // Active nav link on scroll
 function updateActiveNav() {
   const sections = ['home','how-it-works','profiles','testimonials','contact'];
