@@ -407,28 +407,6 @@ window.addEventListener('resize', () => {
   goToSlide(0);
 });
 
-// Touch support
-if (testiTrack) {
-  let touchStartX = 0;
-  testiTrack.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
-  testiTrack.addEventListener('touchend', e => {
-    const diff = touchStartX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) diff > 0 ? nextSlide() : prevSlide();
-  });
-  testiTrack.addEventListener('mouseenter', stopAutoSlide);
-  testiTrack.addEventListener('mouseleave', startAutoSlide);
-}
-
-renderDots();
-startAutoSlide();
-
-window.addEventListener('resize', () => {
-  renderDots();
-  goToSlide(0);
-});
-
-
-
 /* ============================================================
    MODAL — Register / Login
    ============================================================ */
