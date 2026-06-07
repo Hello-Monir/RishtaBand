@@ -225,23 +225,6 @@ function createPetal() {
   setTimeout(() => petal.remove(), 16000);
 }
 
-function createPetal() {
-  if (!petalContainer) return;
-  const petal = document.createElement('div');
-  petal.classList.add('petal');
-  petal.style.left = Math.random() * 100 + 'vw';
-  petal.style.top = '-20px';
-  petal.style.background = petalColors[Math.floor(Math.random() * petalColors.length)];
-  petal.style.width = (6 + Math.random() * 8) + 'px';
-  petal.style.height = (10 + Math.random() * 10) + 'px';
-  petal.style.animationDuration = (6 + Math.random() * 8) + 's';
-  petal.style.animationDelay = (Math.random() * 2) + 's';
-  petalContainer.appendChild(petal);
-  setTimeout(() => petal.remove(), 16000);
-}
-
-
-
 // Spawn petals periodically
 let petalInterval = setInterval(createPetal, 600);
 
