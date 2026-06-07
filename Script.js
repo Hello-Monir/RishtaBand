@@ -210,6 +210,15 @@ const petalColors = [
   'rgba(232,160,178,0.6)',
 ];
 
+const petalContainer = document.getElementById('petalContainer');
+const petalColors = [
+  'rgba(201,147,90,0.6)',
+  'rgba(232,200,122,0.5)',
+  'rgba(181,100,122,0.5)',
+  'rgba(245,236,216,0.8)',
+  'rgba(232,160,178,0.6)',
+];
+
 function createPetal() {
   if (!petalContainer) return;
   const petal = document.createElement('div');
