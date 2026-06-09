@@ -172,16 +172,6 @@ function animateCounter(el, target, duration = 1800) {
     return n + (target === 98 ? '' : '');
   }
 
-function animateCounter(el, target, duration = 1800) {
-  const start = 0;
-  const startTime = performance.now();
-
-  function format(n) {
-    if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M+';
-    if (n >= 1000) return (n / 1000).toFixed(0) + 'K+';
-    return n + (target === 98 ? '' : '');
-  }
-
    
   function update(timestamp) {
     const elapsed = timestamp - startTime;
