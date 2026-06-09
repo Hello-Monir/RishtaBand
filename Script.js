@@ -324,11 +324,6 @@ const testiPrev  = document.getElementById('testiPrev');
 const testiNext  = document.getElementById('testiNext');
 const testiDots  = document.getElementById('testiDots');
 
-const testiTrack = document.getElementById('testiTrack');
-const testiPrev  = document.getElementById('testiPrev');
-const testiNext  = document.getElementById('testiNext');
-const testiDots  = document.getElementById('testiDots');
-
 let currentSlide   = 0;
 let autoSlideTimer = null;
 
